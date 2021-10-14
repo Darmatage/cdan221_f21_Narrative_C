@@ -37,7 +37,7 @@ public class DialogueScene1 : MonoBehaviour
 
     void Start()
     {         // initial visibility settings
-        dialogue.SetActive(false);
+        Dialogue.SetActive(false);
         Image_Chad.SetActive(false);
         Image_Gwen.SetActive(false);
         Image_Gregory.SetActive(false);
@@ -259,6 +259,31 @@ public class DialogueScene1 : MonoBehaviour
         }
         else if (primeInt == 13)
         {
+            Image_Gregory.SetActive(false);
+            Image_PJ.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "PJ";
+            Char6Narrator.text = "What do you think, it's definitely real, right?";
+            Char6Narration.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            //Button_SceneChange1.SetActive(true);
+            Choice1a.SetActive(true); // function Choice1aFunct()
+            Choice1b.SetActive(true); // function Choice1bFunct()
+        }
+        // ENCOUNTER AFTER CHOICE #1
+        else if (primeInt == 100)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gregory.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -266,14 +291,11 @@ public class DialogueScene1 : MonoBehaviour
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "";
+            Char4GregorySpeech.text = "See! I told you it's not real, that's way to dangerous!";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-            //nextButton.SetActive(false);
-            //allowSpace = false;
-            //Button_SceneChange1.SetActive(true);
         }
     }
 
