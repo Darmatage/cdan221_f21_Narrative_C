@@ -7,15 +7,42 @@ using UnityEngine.SceneManagement;
 public class GameHandler : MonoBehaviour{
 
         public static int playerBravery;
+		
+		public static bool GameisPaused = false;
+		public GameObject pauseMenuUI;
+		
         //public GameObject textGameObject;
 
-        //void Start () { UpdateScore (); }
+
+		void Start (){
+                pauseMenuUI.SetActive(false);
+				//UpdateScore ();
+        }
+		
 
         void Update(){         //delete this quit functionality when a Pause Menu is added
-                if (Input.GetKey("escape")){
-                        Application.Quit();
+                if (Input.GetKeyDown("escape")){
+                    if (GameisPaused){
+                                Resume();
+                        }
+                        else{
+                                Pause();
+                        }	
                 }
         }
+
+		void Pause(){
+                pauseMenuUI.SetActive(true);
+                Time.timeScale = 0f;
+                GameisPaused = true;
+        }
+
+        public void Resume(){
+                pauseMenuUI.SetActive(false);
+                Time.timeScale = 1f;
+                GameisPaused = false;
+        }
+
 
         public void AddPlayerStat(int amount){
                 playerBravery += amount;
