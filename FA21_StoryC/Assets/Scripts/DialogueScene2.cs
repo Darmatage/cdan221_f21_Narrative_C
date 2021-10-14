@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class DialogueScene1 : MonoBehaviour
+public class DialogueScene2 : MonoBehaviour
 {
     public int primeInt = 1; // This integer drives game progress!
     public Text Char1You;
@@ -29,9 +29,10 @@ public class DialogueScene1 : MonoBehaviour
     public GameObject Choice1a;
     public GameObject Choice1b;
     public GameObject Button_SceneChange1;
-    //public GameObject Button_SceneChange2;
+    public GameObject Button_SceneChange2;
+	public GameObject Button_SceneChange3;
     public GameObject nextButton;
-    //public GameHandler gameHandler;
+    public GameHandler gameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -46,6 +47,8 @@ public class DialogueScene1 : MonoBehaviour
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Button_SceneChange1.SetActive(false);
+        Button_SceneChange2.SetActive(false);
+        Button_SceneChange3.SetActive(false);
         //Button_SceneChange2.SetActive(false);
         nextButton.SetActive(true);
     }
@@ -147,7 +150,7 @@ public class DialogueScene1 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-            //gameHandler.AddPlayerStat(1);
+            
         }
         else if (primeInt == 7)
         {
@@ -203,7 +206,7 @@ public class DialogueScene1 : MonoBehaviour
             //Choice1a.SetActive(true); // function Choice1aFunct()
             //Choice1b.SetActive(true); // function Choice1bFunct()
         }
-        // ENCOUNTER AFTER CHOICE #1
+
         else if (primeInt == 10)
         {
             Char1You.text = "";
@@ -296,11 +299,47 @@ public class DialogueScene1 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
+        }
+		
+		else if (primeInt == 101)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gregory.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "Gregory";
+            Char4GregorySpeech.text = "Blah blah blah";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+		
+		else if (primeInt == 102)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gregory.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "Gregory";
+            Char4GregorySpeech.text = "wut";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
 			
 			nextButton.SetActive(false);
             allowSpace = false;
 			Button_SceneChange1.SetActive(true);
-			
+			Button_SceneChange2.SetActive(true);
         }
 		
 		
@@ -320,12 +359,32 @@ public class DialogueScene1 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
+			gameHandler.AddPlayerStat(1);
+        }
+		
+		else if (primeInt == 201)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gregory.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "Gregory";
+            Char4GregorySpeech.text = "See! I told you it's not real, that's way to dangerous!";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
 			
 			nextButton.SetActive(false);
             allowSpace = false;
-			Button_SceneChange1.SetActive(true);
+			Button_SceneChange3.SetActive(true);
 			
         }
+		
 		
     }
 
@@ -373,7 +432,17 @@ public class DialogueScene1 : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene("Scene3a");
+    }
+
+    public void SceneChange2()
+    {
+        SceneManager.LoadScene("Scene3b");
+    }
+
+    public void SceneChange3()
+    {
+        SceneManager.LoadScene("Scene3c");
     }
     
 }

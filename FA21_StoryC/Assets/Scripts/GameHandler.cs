@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
-        public static int playerStat;
+        public static int playerBravery;
         //public GameObject textGameObject;
 
         //void Start () { UpdateScore (); }
@@ -18,8 +18,8 @@ public class GameHandler : MonoBehaviour{
         }
 
         public void AddPlayerStat(int amount){
-                playerStat += amount;
-                Debug.Log("Current Player Stat = " + playerStat);
+                playerBravery += amount;
+                Debug.Log("Current Player Stat = " + playerBravery);
         //      UpdateScore ();
         }
 
@@ -28,7 +28,7 @@ public class GameHandler : MonoBehaviour{
         //        scoreTemp.text = "Score: " + score; }
 
         public void StartGame(){
-                SceneManager.LoadScene("Scene1");
+                SceneManager.LoadScene("Scene1_Open");
         }
 
 	public void Credits(){
