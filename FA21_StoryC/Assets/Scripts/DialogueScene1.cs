@@ -199,7 +199,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narration.text = "";
             // Turn off "Next" button, turn on "Choice" buttons
             //nextButton.SetActive(false);
-           // allowSpace = false;
+            // allowSpace = false;
             //Choice1a.SetActive(true); // function Choice1aFunct()
             //Choice1b.SetActive(true); // function Choice1bFunct()
         }
@@ -296,15 +296,196 @@ public class DialogueScene1 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-			
-			nextButton.SetActive(false);
-            allowSpace = false;
-			Button_SceneChange1.SetActive(true);
-			
+
+            nextButton.SetActive(true);
+            allowSpace = true;
+            //Button_SceneChange1.SetActive(true);
+
         }
-		
-		
-		else if (primeInt == 200)
+        else if (primeInt == 101)
+        {
+            Image_PJ.SetActive(true);
+            Image_Gregory.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "*scoffs* Whatever.";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 102)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gwen.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "Gwen";
+            Char3GwenSpeech.text = "God that's so twisted...Like are you okay in the head?";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 103)
+        {
+
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "Gwen";
+            Char3GwenSpeech.text = "If you have anything you want to talk about, just let me know and we can grab coffee and vent.";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 104)
+        {
+            Image_PJ.SetActive(true);
+            Image_Gwen.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "Are any of us really 'okay in the head'?";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 105)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gwen.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "Gwen";
+            Char3GwenSpeech.text = "Yeah, actually. Like, I'm literally fine.";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 106)
+        {
+            Image_PJ.SetActive(true);
+            Image_Gwen.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "Oh well lucky you, I guess.";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 107)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gwen.SetActive(false);
+            Char1You.text = "You";
+            Char1YouSpeech.text = "*Jeez maybe we should just go inside before this takes a genuinely scary turn...";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 108)
+        {
+
+            Char1You.text = "You";
+            Char1YouSpeech.text = "Alright, are we ready to head in, guys?";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 109)
+        {
+
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "And with that, the group headed inside, ready to face the terrors that awaited them...";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Button_SceneChange1.SetActive(true);
+        }
+
+        else if (primeInt == 200)
+        {
+            Image_PJ.SetActive(true);
+            Image_Gregory.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "Exactly, why would I lie about something like this...you know how into horror I am.";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+            nextButton.SetActive(true);
+            allowSpace = true;
+            //Button_SceneChange1.SetActive(true);
+
+        }
+        else if (primeInt == 201)
         {
             Image_PJ.SetActive(false);
             Image_Gregory.SetActive(true);
@@ -315,22 +496,87 @@ public class DialogueScene1 : MonoBehaviour
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "See! I told you it's not real, that's way to dangerous!";
+            Char4GregorySpeech.text = "You both are definitely lying just to scare us!";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-			
-			nextButton.SetActive(false);
-            allowSpace = false;
-			Button_SceneChange1.SetActive(true);
-			
         }
-		
-    }
+        else if (primeInt == 201)
+        {
+            Image_PJ.SetActive(false);
+            Image_Gregory.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "Gregory";
+            Char4GregorySpeech.text = "You both are definitely lying just to scare us!";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 202)
+        {
+            Image_Chad.SetActive(true);
+            Image_Gregory.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = "Hell yeah, bro! Let's do this!!";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 203)
+        {
+            Image_Chad.SetActive(false);
+            Image_Gregory.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "Gregory";
+            Char4GregorySpeech.text = "Yeah guys, let's get this over with...I have a test I need to study for tonight...";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 204)
+        {
+            Image_Chad.SetActive(false);
+            Image_Gregory.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "And with that, the group headed inside, ready to face the terrors that awaited them...";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Button_SceneChange1.SetActive(true);
+        }
 
-    // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
-    public void Choice1aFunct()
+    }
+        // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
+        public void Choice1aFunct()
     {
         Char1You.text = "You";
         Char1YouSpeech.text = "I mean...";
