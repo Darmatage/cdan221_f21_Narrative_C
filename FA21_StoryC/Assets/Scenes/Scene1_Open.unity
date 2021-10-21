@@ -1970,6 +1970,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 288.8802
       objectReference: {fileID: 0}
@@ -1987,15 +1999,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2762984446647620131, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2009,6 +2021,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 0b21888a6af6ec84f88c51ea14aa5db6, type: 2}
     - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
       propertyPath: pauseMenuUI
       value: 
