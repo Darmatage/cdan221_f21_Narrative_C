@@ -90,7 +90,7 @@ public class DialogueScene4b : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "After buying tickets at the door, you find a barren room with three doors.";
+            Char6Narration.text = "You take in the room you just entered.";
         }
         else if (primeInt == 3)
         {
@@ -105,7 +105,7 @@ public class DialogueScene4b : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "One door has blood dripping from it. Another has a mysterious green ooze. The last has deep claw marks.";
+            Char6Narration.text = "There isn't a single window, and the walls are bathed in an eerie shade of purple from the blacklights above you.";
         }
         else if (primeInt == 4)
         {
@@ -118,10 +118,10 @@ public class DialogueScene4b : MonoBehaviour
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
-            Char5PJ.text = "PJ";
-            Char5PJSpeech.text = "Woah...This is so rad.";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "Violently bright neon swirls and graffiti adorn the walls, glowing through the darkness.";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 5)
@@ -132,19 +132,20 @@ public class DialogueScene4b : MonoBehaviour
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
             Char2ChadSpeech.text = "";
-            Char3Gwen.text = "Gwen";
-            Char3GwenSpeech.text = "Ew...Why is that goo that color? Lime is SO last season.";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "Mannequins bedecked in neon paint and garbs are lined up along either wall, looming menacingly over the path through the center of the room.
+";
         }
         else if (primeInt == 6)
         {
-            Image_Gwen.SetActive(false);
-            Image_GregoryScared.SetActive(true);
+            
+            Image_Gregory.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -152,7 +153,7 @@ public class DialogueScene4b : MonoBehaviour
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "Why do each of these look equally scary? Isn't there like, a less scary tour option here?";
+            Char4GregorySpeech.text = " Well, fancy seeing you guys here!";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
@@ -161,29 +162,31 @@ public class DialogueScene4b : MonoBehaviour
         }
         else if (primeInt == 7)
         {
+			Image_Gregory.SetActive(false);
+			Image_PJ.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
             Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
-            Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "I honestly think they should have a tour for people who don't like being scared as much.";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = " What are the odds?";
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
         else if (primeInt == 8)
         {
-            Image_Chad.SetActive(true);
-            Image_GregoryScared.SetActive(false);
+           Image_PJ.SetActive(false);
+            Image_Gwen.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
-            Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "Bro...the point of a haunted house is literally to be scared. C'mon man.";
-            Char3Gwen.text = "";
-            Char3GwenSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "Gwen";
+            Char3GwenSpeech.text = "OMG! Hi guys!!";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
             Char5PJ.text = "";
@@ -193,14 +196,14 @@ public class DialogueScene4b : MonoBehaviour
         }
         else if (primeInt == 9)
         {
-            Image_Gwen.SetActive(true);
-            Image_Chad.SetActive(false);
+            Image_Gwen.SetActive(false);
+            Image_Chad.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            Char3Gwen.text = "Gwen";
-            Char3GwenSpeech.text = "Guys, literally chill...Well, what do you think? What room should we choose?";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = " Wow you guys missed me this much? I didn’t expect to see you all this soon!";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
             Char5PJ.text = "";
@@ -208,22 +211,23 @@ public class DialogueScene4b : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
             // Turn off "Next" button, turn on "Choice" buttons
-            Button_Next.SetActive(false);
-            allowSpace = false;
-            Choice1a.SetActive(true); // function Choice1aFunct()
-            Choice1b.SetActive(true); // function Choice1bFunct()
+           // Button_Next.SetActive(false);
+            //allowSpace = false;
+            //Choice1a.SetActive(true); // function Choice1aFunct()
+            //Choice1b.SetActive(true); // function Choice1bFunct()
             //Choice1c.SetActive(true);
         }
 
-        else if (primeInt == 100)
+        else if (primeInt == 10)
         {
-            Image_Gwen.SetActive(false);
-            Char1You.text = "You";
-            Char1YouSpeech.text = "Guys, I know it looks tacky but the bloody door could be cool...";
+			Image_Chad.SetActive(false);
+            Image_Gwen.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
             Char2Chad.text = "";
             Char2ChadSpeech.text = "";
-            Char3Gwen.text = "";
-            Char3GwenSpeech.text = "";
+            Char3Gwen.text = "Gwen";
+            Char3GwenSpeech.text = "Ugh! Shut up, Chad.";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
             Char5PJ.text = "";
@@ -231,17 +235,17 @@ public class DialogueScene4b : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 101)
+        else if (primeInt == 11)
         {
-            Image_GregoryScared.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
+           Image_Gwen.SetActive(false);
+            Char1You.text = "You";
+            Char1YouSpeech.text = " Funny that we’re all reunited like this!";
             Char2Chad.text = "";
             Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
-            Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "I guess we could...";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
@@ -251,42 +255,24 @@ public class DialogueScene4b : MonoBehaviour
             //Button_SceneChange1.SetActive(true);
         }
 
-        else if (primeInt == 102)
+        else if (primeInt == 12)
         {
-            Image_Gwen.SetActive(true);
-            Image_GregoryScared.SetActive(false);
+            Image_PJ.SetActive(true);
+         
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
             Char2ChadSpeech.text = "";
-            Char3Gwen.text = "Gwen";
-            Char3GwenSpeech.text = "I'm up for that...I just hope no fake blood gets on my clothes, I only just bought this top.";
-            Char4Gregory.text = "";
-            Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-        }
-        else if (primeInt == 103)
-        {
-            Image_Gwen.SetActive(false);
-            Image_Chad.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "Oh get a grip, Gwen! It's gonna be awesome!";
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "Can we talk about the room real quick? Like, what's up with the neon?";
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        // ENCOUNTER AFTER CHOICE #1
-        else if (primeInt == 104)
+        else if (primeInt == 13)
         {
             Image_PJ.SetActive(true);
             Image_Chad.SetActive(false);
@@ -299,21 +285,40 @@ public class DialogueScene4b : MonoBehaviour
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
             Char5PJ.text = "PJ";
-            Char5PJSpeech.text = "I think the creative decision to paint on the door is super poetic. I'm totally on board.";
+            Char5PJSpeech.text = "It’s so tacky… it kills the classic horror vibes we’ve been seeing so far...";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        // ENCOUNTER AFTER CHOICE #1
+        else if (primeInt == 14)
+        {
+            Image_PJ.SetActive(false);
+            Image_Chad.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = " This is so weird… It reminds me of the time I dropped acid at Homecoming my senior year… ";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+		
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
 
-        else if (primeInt == 105)
+        else if (primeInt == 15)
         {
-            Image_PJ.SetActive(false);
-            Image_Gwen.SetActive(true);
+            
+            Image_Chad.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            Char3Gwen.text = "Gwen";
-            Char3GwenSpeech.text = "God, PJ...you need some help. I really do hope this doesn't ruin my clothes...";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = "Such a trippy time, Dude. It really changes a man…";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
             Char5PJ.text = "";
@@ -322,10 +327,10 @@ public class DialogueScene4b : MonoBehaviour
             Char6Narration.text = "";
         }
 
-        else if (primeInt == 106)
+        else if (primeInt == 16)
         {
-            Image_Gwen.SetActive(false);
-            Image_Gregory.SetActive(true);
+            Image_Chad.SetActive(false);
+            Image_GregoryScared.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -333,7 +338,7 @@ public class DialogueScene4b : MonoBehaviour
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "I think I might be sick if I go in there...";
+            Char4GregorySpeech.text = "Guys, is it just me or do some of the mannequins seem to almost be alive?";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
@@ -344,9 +349,8 @@ public class DialogueScene4b : MonoBehaviour
             //Button_SceneChange1.SetActive(true);
             //Button_SceneChange2.SetActive(true);
         }
-        else if (primeInt == 107)
+        else if (primeInt == 17)
         {
-            Image_PJ.SetActive(true);
             Image_Gregory.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -356,12 +360,18 @@ public class DialogueScene4b : MonoBehaviour
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
-            Char5PJ.text = "PJ";
-            Char5PJSpeech.text = "You are all so lame. Hey, do you just wanna go through this room?";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "You pause and study the figures lining the walls, and you notice one twitch ever so slightly…";
+			Turn off "Next" button, turn on "Choice" buttons
+            Button_Next.SetActive(false);
+            allowSpace = false;
+            Choice1a.SetActive(true); // function Choice1aFunct()
+            Choice1b.SetActive(true); // function Choice1bFunct()
+            
         }
-        else if (primeInt == 108)
+        else if (primeInt == 100)
         {
             Image_PJ.SetActive(false);
             Image_Chad.SetActive(true);
