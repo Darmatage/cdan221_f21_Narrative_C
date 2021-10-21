@@ -30,7 +30,7 @@ public class DialogueScene4a : MonoBehaviour
     public GameObject Choice1b;
     public GameObject Button_SceneChange1;
     //public GameObject Button_SceneChange2;
-    public GameObject nextButton;
+    public GameObject Button_Next;
     //public GameHandler gameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
@@ -47,7 +47,7 @@ public class DialogueScene4a : MonoBehaviour
         Choice1b.SetActive(false);
         Button_SceneChange1.SetActive(false);
         //Button_SceneChange2.SetActive(false);
-        nextButton.SetActive(true);
+        Button_Next.SetActive(true);
     }
 
     void Update()
@@ -182,8 +182,6 @@ public class DialogueScene4a : MonoBehaviour
         }
         else if (primeInt == 9)
         {
-            Image_Chad.SetActive(false);
-            Image_PJ.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -204,7 +202,6 @@ public class DialogueScene4a : MonoBehaviour
         }
         else if (primeInt == 10)
         {
-            Image_Chad.SetActive(false);
             Image_PJ.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -234,46 +231,13 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "The noise starts to seemingly draw closer to your group, and you scan the shadowed corners of the room, trying to find the source of the noise. ";
-            //nextButton.SetActive(false);
-            //allowSpace = false;
-            //Button_SceneChange1.SetActive(true);
-        }
-
-        else if (primeInt == 12)
-        {
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "Narrator";
-            Char6Narration.text = "You notice a visibly distraught and bloodied woman banging on the glass window.";
-        }
-        else if (primeInt == 13)
-        {
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "???";
-            Char6Narration.text = "PLEASE HELP ME I'M BEGGING YOU!!";
-            nextButton.SetActive(false);
+            Button_Next.SetActive(false);
             allowSpace = false;
+            Choice1a.SetActive(true); 
+            Choice1b.SetActive(true);
             //Button_SceneChange1.SetActive(true);
-            Choice1a.SetActive(true); // function Choice1aFunct()
-            Choice1b.SetActive(true); // function Choice1bFunct()
         }
+     
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
@@ -290,11 +254,6 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "You hold your ground, curious as to what the sound is.";
-
-            nextButton.SetActive(true);
-            allowSpace = true;
-            //Button_SceneChange1.SetActive(true);
-
         }
         else if (primeInt == 101)
         {
@@ -308,8 +267,8 @@ public class DialogueScene4a : MonoBehaviour
             //Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
             //Char4GregorySpeech.text = "";
-            Char5PJ.text = "P.J";
-            Char5PJSpeech.text = "I donÅft have the best feeling about thisÅc";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "I donÅ't have the best feeling about thisÅ...";
             Char6Narrator.text = "";
             Char6Narration.text = "";
 
@@ -328,15 +287,15 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "Your heart races as the sound draws closer and closerÅc A flash of blue and red leaps out of the shadows towards youÅc";
+            Char6Narration.text = "Your heart races as the sound draws closer and closerÅ. A flash of blue and red leaps out of the shadows towards youÅ";
 
         }
         else if (primeInt == 103)
         {
-
+            Image_Chad.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
-            Char2Chad.text = "P.J and Chad";
+            Char2Chad.text = "Chad";
             Char2ChadSpeech.text = "AAAGGHHHHH!!!!";
             //Char3Gwen.text = "";
             //Char3GwenSpeech.text = "";
@@ -346,10 +305,10 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-
         }
         else if (primeInt == 104)
         {
+            Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -361,7 +320,7 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "A man stumbles towards you,  bloodied protective goggles hanging off of one side of his face.";
+            Char6Narration.text = "A man stumbles towards you, bloodied protective goggles hanging off of one side of his face.";
 
         }
         else if (primeInt == 105)
@@ -394,8 +353,8 @@ public class DialogueScene4a : MonoBehaviour
             //Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
             //Char4GregorySpeech.text = "";
-            Char5PJ.text = "P.J";
-            Char5PJSpeech.text = " Look at the anguish in his eyesÅc I feel like this on the insideÅc";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = " Look at the anguish in his eyesÅ, I feel like this on the insideÅ.";
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
@@ -406,7 +365,7 @@ public class DialogueScene4a : MonoBehaviour
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "Now is not the time but we need to get you help, man";
+            Char2ChadSpeech.text = "Now is not the time but we need to get you help, man.";
             //Char3Gwen.text = "";
             //Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
@@ -429,7 +388,7 @@ public class DialogueScene4a : MonoBehaviour
             //Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
             //Char4GregorySpeech.text = "";
-            Char5PJ.text = "P.J";
+            Char5PJ.text = "PJ";
             Char5PJSpeech.text = "Ew, what happened to his arms??";
             Char6Narrator.text = "";
             Char6Narration.text = "";
@@ -468,12 +427,12 @@ public class DialogueScene4a : MonoBehaviour
             //Char4GregorySpeech.text = "";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
-            Char6Narrator.text = "???";
-            Char6Narration.text = "YOU SEE MY ARMS? YOURS WILL LOOK THE SAME BY THE TIME THE MACHINEÅfS DONE WITH YA!";
+            Char6Narrator.text = "";
+            Char6Narration.text = "YOU SEE MY ARMS? YOURS WILL LOOK THE SAME BY THE TIME THE MACHINEÅS DONE WITH YA!";
         }
         else if (primeInt == 111)
         {
-            Image_PJ.SetActive(true);
+            Image_PJ.SetActive(false);
             Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -508,6 +467,7 @@ public class DialogueScene4a : MonoBehaviour
         else if (primeInt == 113)
         {
             Image_Chad.SetActive(true);
+            Image_PJ.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "Chad";
@@ -523,6 +483,7 @@ public class DialogueScene4a : MonoBehaviour
         }
         else if (primeInt == 114)
         {
+            Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -535,17 +496,15 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "The man growls and advances further, the chains at his feet seeming to slow him down a bit.";
-            nextButton.SetActive(false);
-            allowSpace = false;
-            Button_SceneChange1.SetActive(true);
+            //nextButton.SetActive(false);
+            //allowSpace = false;
+            //Button_SceneChange1.SetActive(true);
         }
 
-
-        else if (primeInt == 200)
+        else if (primeInt == 114)
         {
-            Image_PJ.SetActive(false);
             Char1You.text = "You";
-            Char1YouSpeech.text = "Guys, this is kinda boringÅc HeÅfs the only dude in this room";
+            Char1YouSpeech.text = "Guys, this is kinda boringÅ he's the only dude in this room";
             Char2Chad.text = "";
             Char2ChadSpeech.text = "";
             //Char3Gwen.text = "";
@@ -559,9 +518,8 @@ public class DialogueScene4a : MonoBehaviour
             //Button_SceneChange1.SetActive(true);
 
         }
-        else if (primeInt == 201)
+        else if (primeInt == 115)
         {
-            Image_PJ.SetActive(false);
             Image_Chad.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -576,7 +534,7 @@ public class DialogueScene4a : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 201)
+        else if (primeInt == 116)
         {
             Image_Chad.SetActive(false);
             Char1You.text = "";
@@ -591,10 +549,131 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "And with that, the three of you move towards the next door, the man stumbling behind you.";
-            nextButton.SetActive(false);
+            Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);
         }
+        else if (primeInt == 200)
+        {
+            Image_PJ.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "This feeling of fearÅ it makes me feel more alive than I have in yearsÅ.";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+       else if (primeInt == 201)
+        {
+            Image_PJ.SetActive(false);
+            Image_Chad.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = "WeÅ're getting you some serious help after all of thisÅ...";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 202)
+        {
+            Image_PJ.SetActive(true);
+            Image_Chad.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "Maybe we should stay and check it out- I think this could be neat.";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 203)
+        {
+            Image_PJ.SetActive(false);
+            Char1You.text = "You";
+            Char1YouSpeech.text = " I don't know, dude.";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 204)
+        {
+            Image_Chad.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = "Maybe we should get out of hereÅ. Like to find a real jump scare or something.";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 205)
+        {
+            Image_PJ.SetActive(true);
+            Image_Chad.SetActive(false);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "FineeeeÅ.";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+
+        }
+        else if (primeInt == 206)
+        {
+            Image_PJ.SetActive(false);
+            Image_Chad.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = "LetÅ's roll.";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+            Button_Next.SetActive(false);
+            allowSpace = false;
+            Button_SceneChange1.SetActive(true);
+        }
+      
 
     }
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
@@ -611,40 +690,16 @@ public class DialogueScene4a : MonoBehaviour
         Char5PJ.text = "";
         Char5PJSpeech.text = "";
         Char6Narrator.text = "Narrator";
-        Char6Narration.text = "The chains rattle violently, getting louder and louder with every second. ";
+        Char6Narration.text = "You are intruiged by the noise getting closer.";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        Button_Next.SetActive(true);
         allowSpace = true;
     }
     public void Choice1bFunct()
     {
-        Image_PJ.SetActive(false);
-        Image_Chad.SetActive(true);
-        Char1You.text = "";
-        Char1YouSpeech.text = "";
-        Char2Chad.text = "Chad";
-        Char2ChadSpeech.text = "GuysÅc";
-        //Char3Gwen.text = "";
-        //Char3GwenSpeech.text = "";
-        //Char4Gregory.text = "";
-        //Char4GregorySpeech.text = "";
-        Char5PJ.text = "";
-        Char5PJSpeech.text = "";
-        Char6Narrator.text = "";
-        Char6Narration.text = "";
-        primeInt = 199;
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
-        nextButton.SetActive(true);
-        allowSpace = true;
-    }
 
-    public void SceneChange1()
-    {
-        Image_PJ.SetActive(true);
-        Image_Chad.SetActive(false);
         Char1You.text = "";
         Char1YouSpeech.text = "";
         Char2Chad.text = "";
@@ -653,181 +708,23 @@ public class DialogueScene4a : MonoBehaviour
         //Char3GwenSpeech.text = "";
         //Char4Gregory.text = "";
         //Char4GregorySpeech.text = "";
-        Char5PJ.text = "P.J";
-        Char5PJSpeech.text = "This feeling of fearÅc It makes me feel more alive than I have in yearsÅc";
-        Char6Narrator.text = "";
-        Char6Narration.text = "";
+        Char5PJ.text = "";
+        Char5PJSpeech.text = "";
+        Char6Narrator.text = "Narrator";
+        Char6Narration.text = "The chains rattle violently, getting louder ad louder with every second.";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        Button_Next.SetActive(true);
         allowSpace = true;
     }
 
+
+
     public void SceneChange1()
     {
-        {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "WeÅfre getting you some serious help after all of thisÅc";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-            primeInt = 199;
-            Choice1a.SetActive(false);
-            Choice1b.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-
-        public void SceneChange1()
-        {
-            Image_PJ.SetActive(true);
-            Image_Chad.SetActive(false);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "P.J";
-            Char5PJSpeech.text = "Maybe we should stay and check it out- I think this could be neat.";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-            primeInt = 199;
-            Choice1a.SetActive(false);
-            Choice1b.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-
-        public void SceneChange1()
-        {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(false);
-            Char1You.text = "You";
-            Char1YouSpeech.text = " I don't know, Dude.";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-            primeInt = 199;
-            Choice1a.SetActive(false);
-            Choice1b.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-
-        public void SceneChange1()
-        {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "Maybe we should get out of hereÅc Like to find a real jump scare or something.";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-            primeInt = 199;
-            Choice1a.SetActive(false);
-            Choice1b.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-
-        public void SceneChange1()
-        {
-            Image_PJ.SetActive(true);
-            Image_Chad.SetActive(false);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "P.J";
-            Char5PJSpeech.text = "FineeeeÅc.";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-            primeInt = 199;
-            Choice1a.SetActive(false);
-            Choice1b.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-
-        public void SceneChange1()
-        {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "LetÅfs roll.";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-            primeInt = 199;
-            Choice1a.SetActive(false);
-            Choice1b.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-
-        public void SceneChange1()
-        {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(false);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            //Char3Gwen.text = "";
-            //Char3GwenSpeech.text = "";
-            //Char4Gregory.text = "";
-            //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "Narrator";
-            Char6Narration.text = "With that, the three of you turn on your heels and dash towards the next door, leaving the eerie sound of the chains behind you.";
-            primeInt = 199;
-            Choice1a.SetActive(false);
-            Choice1b.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-
-        public void SceneChange1()
-        SceneManager.LoadScene("Scene4a");
+        SceneManager.LoadScene("Scene5a");
     }
+    
 
 }

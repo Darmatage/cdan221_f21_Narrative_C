@@ -582,7 +582,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I mean..
+  m_Text: 'Investigate '
 --- !u!222 &558992702
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100% It's real
+  m_Text: Keep Moving
 --- !u!222 &621888835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1715,7 +1715,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Let's Get Scared!
+  m_Text: Go Into Next Room...
 --- !u!222 &1203195568
 CanvasRenderer:
   m_ObjectHideFlags: 0
