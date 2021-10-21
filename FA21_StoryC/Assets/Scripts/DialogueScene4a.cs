@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class DialogueScene3a : MonoBehaviour
+public class DialogueScene4a : MonoBehaviour
 {
     public int primeInt = 1; // This integer drives game progress!
     public Text Char1You;
@@ -31,7 +31,7 @@ public class DialogueScene3a : MonoBehaviour
     public GameObject Button_SceneChange1;
     //public GameObject Button_SceneChange2;
     public GameObject nextButton;
-    public GameHandler gameHandler;
+    //public GameHandler gameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 

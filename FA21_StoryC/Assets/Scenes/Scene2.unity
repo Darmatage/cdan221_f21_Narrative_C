@@ -267,7 +267,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1720488007}
         m_TargetAssemblyTypeName: DialogueScene2, Assembly-CSharp
         m_MethodName: SceneChange3
         m_Mode: 1
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1720488007}
         m_TargetAssemblyTypeName: DialogueScene2, Assembly-CSharp
         m_MethodName: SceneChange2
         m_Mode: 1
@@ -861,9 +861,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1720488007}
         m_TargetAssemblyTypeName: DialogueScene2, Assembly-CSharp
-        m_MethodName: Choice1bFunct
+        m_MethodName: Choice1cFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1720488007}
         m_TargetAssemblyTypeName: DialogueScene2, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1720488007}
         m_TargetAssemblyTypeName: DialogueScene2, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
@@ -2953,10 +2953,12 @@ MonoBehaviour:
   Image_Chad: {fileID: 1925438913}
   Image_Gwen: {fileID: 1142800394}
   Image_Gregory: {fileID: 1066723944}
+  Image_GregoryScared: {fileID: 570556474}
   Image_PJ: {fileID: 382057411}
   Image_BG: {fileID: 134030352}
   Choice1a: {fileID: 1159060510}
   Choice1b: {fileID: 588272640}
+  Choice1c: {fileID: 528571486}
   Button_SceneChange1: {fileID: 1739276230}
   Button_SceneChange2: {fileID: 113110650}
   Button_SceneChange3: {fileID: 39239314}
@@ -3045,7 +3047,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1720488007}
         m_TargetAssemblyTypeName: DialogueScene2, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
@@ -3178,7 +3180,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1720488007}
         m_TargetAssemblyTypeName: DialogueScene2, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
