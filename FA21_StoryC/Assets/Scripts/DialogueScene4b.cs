@@ -39,7 +39,6 @@ public class DialogueScene4b : MonoBehaviour
     private bool allowSpace = true;
 
 
-
     void Start()
     {         // initial visibility settings
         Dialogue.SetActive(false);
@@ -289,7 +288,7 @@ public class DialogueScene4b : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        // ENCOUNTER AFTER CHOICE #1
+ 
         else if (primeInt == 14)
         {
             Image_PJ.SetActive(false);
@@ -364,13 +363,16 @@ public class DialogueScene4b : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "You pause and study the figures lining the walls, and you notice one twitch ever so slightly…";
-			Turn off "Next" button, turn on "Choice" buttons
+			//Turn off "Next" button, turn on "Choice" buttons
             Button_Next.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
             Choice1b.SetActive(true); // function Choice1bFunct()
             
         }
+		
+		
+       // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
             Image_PJ.SetActive(false);
@@ -388,7 +390,7 @@ public class DialogueScene4b : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 109)
+        else if (primeInt == 101)
         {
             Image_Chad.SetActive(false);
             Char1You.text = "You";
@@ -404,7 +406,7 @@ public class DialogueScene4b : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 110)
+        else if (primeInt == 102)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -418,7 +420,8 @@ public class DialogueScene4b : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "With PJ and Chad in tow, you approach the bloodied door and turn the knob...";
-            Button_Next.SetActive(false);
+            //change button visibility:
+			Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);
         }
@@ -689,12 +692,14 @@ public class DialogueScene4b : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "As you roll your eyes at your friends antics, you push open the door, carefully avoiding the ooze...";
-            Button_Next.SetActive(false);
+            //buttons visibility changes:
+			Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);
         }
 
     }
+	
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
     public void Choice1aFunct()
     {
@@ -716,6 +721,7 @@ public class DialogueScene4b : MonoBehaviour
         Button_Next.SetActive(true);
         allowSpace = true;
     }
+	
     public void Choice1bFunct()
     {
         Char1You.text = "";
