@@ -11,7 +11,7 @@ public class DialogueScene3b : MonoBehaviour
     public Text Char1You;
     public Text Char1YouSpeech;
     public Text Char2Chad;
-    public Text Char2ChadSpeech;
+    public Text Char2ChadSpeech; 
     //public Text Char3Gwen;
     //public Text Char3GwenSpeech;
     public Text Char4Gregory;
@@ -22,7 +22,7 @@ public class DialogueScene3b : MonoBehaviour
     public Text Char6Narration;
     public GameObject Dialogue;
     public GameObject Image_Chad;
-    //public GameObject Image_Gwen;
+    //public GameObject Image_Gwen
     public GameObject Image_Gregory;
     public GameObject Image_GregoryScared;
     //public GameObject Image_PJ;
@@ -31,29 +31,28 @@ public class DialogueScene3b : MonoBehaviour
     public GameObject Choice1b;
     public GameObject Button_SceneChange1;
     //public GameObject Button_SceneChange2;
-    public GameObject nextButton;
-    //public GameHandler gameHandler;
-    //public AudioSource audioSource;
+    public GameObject Button_Next;
+    public GameHandler gameHandler;
     private bool allowSpace = true;
 
     void Start()
     {         // initial visibility settings
         Dialogue.SetActive(false);
         Image_Chad.SetActive(false);
-        //Image_Gwen.SetActive(false);
+        //Image_Gwen.SetActive(true);
         Image_Gregory.SetActive(false);
         Image_GregoryScared.SetActive(false);
-        //Image_PJ.SetActive(false);
+        //Image_PJ.SetActive(true);
         Image_BG.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Button_SceneChange1.SetActive(false);
         //Button_SceneChange2.SetActive(false);
-        nextButton.SetActive(true);
+        Button_Next.SetActive(true);
     }
 
     void Update()
-    {         // use spacebar as Next button
+    {
         if (allowSpace == true)
         {
             if (Input.GetKeyDown("space"))
@@ -250,7 +249,7 @@ public class DialogueScene3b : MonoBehaviour
             //Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-            nextButton.SetActive(false);
+            Button_Next.SetActive(false);
             allowSpace = false;
             //Button_SceneChange1.SetActive(true);
             Choice1a.SetActive(true); // function Choice1aFunct()
@@ -402,7 +401,7 @@ public class DialogueScene3b : MonoBehaviour
             //Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "The scientist's screams are arburptly cut off as the door slams shut behind you.";
-            nextButton.SetActive(false);
+            Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);
         }
@@ -490,7 +489,7 @@ public class DialogueScene3b : MonoBehaviour
             //Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "A spurt of blood is seen and followed by anguished screams. With a shudder, you step into the next room.";
-            nextButton.SetActive(false);
+            Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);
         }
@@ -515,7 +514,7 @@ public class DialogueScene3b : MonoBehaviour
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        Button_Next.SetActive(true);
         allowSpace = true;
     }
     public void Choice1bFunct()
@@ -535,7 +534,7 @@ public class DialogueScene3b : MonoBehaviour
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        Button_Next.SetActive(true);
         allowSpace = true;
     }
 

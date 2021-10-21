@@ -261,7 +261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 85887f0be6edc674e9984e6ba714c9e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 915ba4473d64d66429e78829ea64a715, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7534354, g: 0.76453215, b: 0.9811321, a: 1}
+  m_Color: {r: 0.8492298, g: 0.56037736, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -582,7 +582,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I mean..
+  m_Text: Ignore the Actor
 --- !u!222 &558992702
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100% It's real
+  m_Text: Scare THEM!
 --- !u!222 &621888835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1252,7 +1252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7534354, g: 0.76453215, b: 0.9811321, a: 1}
+  m_Color: {r: 0.87910616, g: 0.53207546, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1406,7 +1406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7534354, g: 0.76453215, b: 0.9811321, a: 1}
+  m_Color: {r: 0.86880213, g: 0.62985045, b: 0.990566, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1715,7 +1715,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Let's Get Scared!
+  m_Text: Open the Next Door...
 --- !u!222 &1203195568
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2790,7 +2790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7534354, g: 0.76453215, b: 0.9811321, a: 1}
+  m_Color: {r: 0.87121356, g: 0.6264151, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
