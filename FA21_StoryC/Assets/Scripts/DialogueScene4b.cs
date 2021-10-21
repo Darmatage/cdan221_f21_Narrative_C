@@ -138,8 +138,7 @@ public class DialogueScene4b : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "Mannequins bedecked in neon paint and garbs are lined up along either wall, looming menacingly over the path through the center of the room.
-";
+            Char6Narration.text = "along either wall, looming menacingly over the path through the center of the room.";
         }
         else if (primeInt == 6)
         {
