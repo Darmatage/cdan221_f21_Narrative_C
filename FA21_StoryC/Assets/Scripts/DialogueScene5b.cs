@@ -214,7 +214,7 @@ public class DialogueScene5b : MonoBehaviour
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "If you're gonna keep killng the fun, the exit is right over there.";
+            Char2ChadSpeech.text = "If you're gonna keep killing the fun, the exit is right over there.";
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
@@ -453,7 +453,7 @@ public class DialogueScene5b : MonoBehaviour
             Char6Narration.text = "You're never gonna get out of this place...";
             Button_Next.SetActive(false);
             allowSpace = false;
-            Button_SceneChange2.SetActive(true);
+            Button_SceneChange1.SetActive(true);
         }
 
         else if (primeInt == 200)
@@ -589,21 +589,6 @@ public class DialogueScene5b : MonoBehaviour
         }
         else if (primeInt == 208)
         {
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            Char3Gwen.text = "";
-            Char3GwenSpeech.text = "";
-            Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "...The viscosity is too slow moving for it to be water based...";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-        }
-        else if (primeInt == 209)
-        {
             Image_Gregory.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -618,7 +603,7 @@ public class DialogueScene5b : MonoBehaviour
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "As you all file into the next room, you can swear you hear the laughter right behind you.";
         }
-        else if (primeInt == 210)
+        else if (primeInt == 209)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
