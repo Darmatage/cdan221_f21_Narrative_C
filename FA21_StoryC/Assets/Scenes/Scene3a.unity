@@ -375,7 +375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &199090521
 RectTransform:
   m_ObjectHideFlags: 0
@@ -582,7 +582,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I mean..
+  m_Text: Get Closer
 --- !u!222 &558992702
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100% It's real
+  m_Text: Move On
 --- !u!222 &621888835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1219,7 +1219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1066723945
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1373,7 +1373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1142800395
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1448,7 +1448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1146564903
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1645,6 +1645,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159060510}
   m_CullTransparentMesh: 1
+--- !u!114 &1165237486 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+  m_PrefabInstance: {fileID: 1254388764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad848c997ae5134b8026871f057ebc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1203195565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,7 +1726,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Let's Get Scared!
+  m_Text: Push open the door...
 --- !u!222 &1203195568
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1877,7 +1888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1360245306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2180,6 +2191,7 @@ GameObject:
   - component: {fileID: 1720488004}
   - component: {fileID: 1720488003}
   - component: {fileID: 1720488007}
+  - component: {fileID: 1720488008}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2312,6 +2324,36 @@ MonoBehaviour:
   Choice1b: {fileID: 588272640}
   Button_SceneChange1: {fileID: 1739276230}
   nextButton: {fileID: 1737142858}
+--- !u!114 &1720488008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720488002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd16623fffabff44d9ac3f3b3500acda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1You: {fileID: 1077224436}
+  Char1YouSpeech: {fileID: 1687462295}
+  Char2Chad: {fileID: 1583904539}
+  Char2ChadSpeech: {fileID: 1948414115}
+  Char5PJ: {fileID: 161132680}
+  Char5PJSpeech: {fileID: 758659637}
+  Char6Narrator: {fileID: 840237280}
+  Char6Narration: {fileID: 751716773}
+  Dialogue: {fileID: 728802254}
+  Image_Chad: {fileID: 1925438913}
+  Image_PJ: {fileID: 382057411}
+  Image_BG: {fileID: 134030352}
+  Choice1a: {fileID: 1159060510}
+  Choice1b: {fileID: 588272640}
+  Button_SceneChange1: {fileID: 1739276230}
+  nextButton: {fileID: 1737142858}
+  gameHandler: {fileID: 1165237486}
 --- !u!1 &1737142858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,7 +2637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1793909943
 RectTransform:
   m_ObjectHideFlags: 0
