@@ -65,11 +65,17 @@ public class GameHandler : MonoBehaviour{
         //      UpdateScore ();
         }
 
-        //void UpdateScore () {
-        //        Text scoreTemp = textGameObject.GetComponent<Text>();
-        //        scoreTemp.text = "Score: " + score; }
 
-        public void StartGame(){
+    public int CheckPlayerStat()
+    {
+        return playerBravery;
+    }
+
+    //void UpdateScore () {
+    //        Text scoreTemp = textGameObject.GetComponent<Text>();
+    //        scoreTemp.text = "Score: " + score; }
+
+    public void StartGame(){
                 SceneManager.LoadScene("Scene1_Open");
         }
 

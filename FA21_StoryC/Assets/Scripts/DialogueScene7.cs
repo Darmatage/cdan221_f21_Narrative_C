@@ -489,6 +489,16 @@ public class DialogueScene7 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
+
+            if (gameHandler.CheckPlayerStat() <= 0)
+            {
+                primeInt = 149;
+            }
+            else if (gameHandler.CheckPlayerStat() > 0)
+            {
+                primeInt = 249;
+            }
+
         }
         else if (primeInt == 150)
         {
@@ -736,6 +746,17 @@ public class DialogueScene7 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "The door draws closer and closer, and you switch into a full sprint.";
+
+            if (gameHandler.CheckPlayerStat() <= 0)
+            {
+                primeInt = 149;
+            }
+            else if (gameHandler.CheckPlayerStat() > 0)
+            {
+                primeInt = 249;
+            }
+
+
         }
         
         else if (primeInt == 250)
@@ -809,6 +830,9 @@ public class DialogueScene7 : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(-1);
+
     }
     public void Choice1bFunct()
     {
@@ -830,6 +854,9 @@ public class DialogueScene7 : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(1);
+
     }
 
     public void SceneChange1()
