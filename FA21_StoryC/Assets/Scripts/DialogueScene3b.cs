@@ -237,6 +237,7 @@ public class DialogueScene3b : MonoBehaviour
 
         else if (primeInt == 12)
         {
+            Image_Chad.SetActive(false);
             Char1You.text = "You";
             Char1YouSpeech.text = "I don't know man...she looks a little too scared...";
             Char2Chad.text = "";
@@ -400,7 +401,7 @@ public class DialogueScene3b : MonoBehaviour
             //Char5PJ.text = "";
             //Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "The scientist's screams are arburptly cut off as the door slams shut behind you.";
+            Char6Narration.text = "The scientist's screams are arburptly cut off as the door slams shut.";
             Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);
@@ -458,10 +459,8 @@ public class DialogueScene3b : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-
         else if (primeInt == 203)
         {
-            Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -488,7 +487,22 @@ public class DialogueScene3b : MonoBehaviour
             //Char5PJ.text = "";
             //Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "A spurt of blood is seen and followed by anguished screams. With a shudder, you step into the next room.";
+            Char6Narration.text = "A spurt of blood is seen and followed by anguished screams.";
+        }
+        else if (primeInt == 205)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            //Char3Gwen.text = "";
+            //Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            //Char5PJ.text = "";
+            //Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "You quickly turn, nauseated by the sight, and move on.";
             Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);

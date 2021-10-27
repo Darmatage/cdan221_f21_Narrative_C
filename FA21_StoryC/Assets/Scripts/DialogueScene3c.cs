@@ -118,8 +118,8 @@ public class DialogueScene3c : MonoBehaviour
         }
         else if (primeInt == 5)
         {
-            Char1You.text = "Jeez, someone must really not like their room.";
-            Char1YouSpeech.text = "";
+            Char1You.text = "You";
+            Char1YouSpeech.text = "Jeez, someone must really not like their room.";
             //Char2Chad.text = "";
             //Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
@@ -203,7 +203,8 @@ public class DialogueScene3c : MonoBehaviour
             //Choice1b.SetActive(true); // function Choice1bFunct()
         }
         else if (primeInt == 10)
-        { 
+        {
+            Image_PJ.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             //Char2Chad.text = "";
@@ -304,9 +305,24 @@ public class DialogueScene3c : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "As soon as you're less than a foot away from the bed, a gray, yellow nailed hand shoots out and grabs you.";
+            Char6Narration.text = "As soon as you're less than a foot away from the bed...";
         }
         else if (primeInt == 101)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            //Char2Chad.text = "";
+            //Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "...A gray, yellow nailed hand shoots out and grabs you!!";
+        }
+        else if (primeInt == 102)
         {
             
             Char1You.text = "You";
@@ -323,7 +339,7 @@ public class DialogueScene3c : MonoBehaviour
             Char6Narration.text = "";
 
         }
-        else if (primeInt == 102)
+        else if (primeInt == 103)
         {
             
             Char1You.text = "";
@@ -340,7 +356,7 @@ public class DialogueScene3c : MonoBehaviour
             Char6Narration.text = "You fall backwards, scrambling away as a disheveled girl with matted black hair creeps out.";
 
         }
-        else if (primeInt == 103)
+        else if (primeInt == 104)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -356,7 +372,7 @@ public class DialogueScene3c : MonoBehaviour
             Char6Narration.text = "As she crawls out from under the bed, you feel Gwen and PJ's hands grabbing you as she screams-";
 
         }
-        else if (primeInt == 104)
+        else if (primeInt == 105)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -372,7 +388,7 @@ public class DialogueScene3c : MonoBehaviour
             Char6Narration.text = "YOU'LL NEVER LEAVE THIS PLACE ALIVE!!";
 
         }
-        else if (primeInt == 105)
+        else if (primeInt == 106)
         {
             Image_GwenScared.SetActive(true);
             Char1You.text = "";
@@ -389,7 +405,7 @@ public class DialogueScene3c : MonoBehaviour
             Char6Narration.text = "";
 
         }
-        else if (primeInt == 106)
+        else if (primeInt == 107)
         {
             Image_GwenScared.SetActive(false);
             Char1You.text = "";
@@ -405,7 +421,7 @@ public class DialogueScene3c : MonoBehaviour
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "The girl follows on all fours, hissing and snarling. You can feel her breath at your heels when-";
         }
-        else if (primeInt == 107)
+        else if (primeInt == 108)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -418,10 +434,24 @@ public class DialogueScene3c : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "BANG! PJ slams the door shut as soon as you cross the landing. A sickening thunk echoes as soon as the door closes.";
-
+            Char6Narration.text = "BANG! PJ slams the door shut as soon as you cross the landing.";
         }
-        else if (primeInt == 108)
+        else if (primeInt == 109)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            //Char2Chad.text = "";
+            //Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "A sickening thunk echoes as soon as the door closes.";
+        }
+        else if (primeInt == 110)
         {
             Image_PJ.SetActive(true);
             Char1You.text = "";
@@ -432,8 +462,24 @@ public class DialogueScene3c : MonoBehaviour
             Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
             //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
+            Char5PJ.text = "PJ";
             Char5PJSpeech.text = "Damn, that's gotta hurt.";
+            Char6Narrator.text = "";
+            Char6Narration.text = "";
+        }
+        else if (primeInt == 111)
+        {
+            Image_PJ.SetActive(false);
+            Char1You.text = "You";
+            Char1YouSpeech.text = "Jeez...talk about stuff of nightmares...let's just go.";
+            //Char2Chad.text = "";
+            //Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            //Char4Gregory.text = "";
+            //Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
             Button_Next.SetActive(false);
@@ -481,15 +527,15 @@ public class DialogueScene3c : MonoBehaviour
             Image_GwenScared.SetActive(false);
             Image_PJ.SetActive(true);
             Char1You.text = "";
-            Char1YouSpeech.text = "You're literally such a drag.";
+            Char1YouSpeech.text = "";
             //Char2Chad.text = "";
             //Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
             //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "You're literally such a drag.";
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }

@@ -674,7 +674,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
@@ -1595,7 +1595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
@@ -2369,7 +2369,6 @@ GameObject:
   - component: {fileID: 1720488005}
   - component: {fileID: 1720488004}
   - component: {fileID: 1720488003}
-  - component: {fileID: 1720488007}
   - component: {fileID: 1720488008}
   m_Layer: 5
   m_Name: Canvas
@@ -2469,41 +2468,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1720488007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720488002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead598619d0e8354e88f41c370064731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primeInt: 1
-  Char1You: {fileID: 1077224436}
-  Char1YouSpeech: {fileID: 1687462295}
-  Char2Chad: {fileID: 1583904539}
-  Char2ChadSpeech: {fileID: 1948414115}
-  Char3Gwen: {fileID: 199090522}
-  Char3GwenSpeech: {fileID: 1146564904}
-  Char4Gregory: {fileID: 1793909944}
-  Char4GregorySpeech: {fileID: 1360245307}
-  Char5PJ: {fileID: 161132680}
-  Char5PJSpeech: {fileID: 758659637}
-  Char6Narrator: {fileID: 840237280}
-  Char6Narration: {fileID: 751716773}
-  Dialogue: {fileID: 728802254}
-  Image_Chad: {fileID: 1925438913}
-  Image_Gwen: {fileID: 1142800394}
-  Image_Gregory: {fileID: 1066723944}
-  Image_PJ: {fileID: 382057411}
-  Image_BG: {fileID: 134030352}
-  Choice1a: {fileID: 1159060510}
-  Choice1b: {fileID: 588272640}
-  Button_SceneChange1: {fileID: 1739276230}
-  nextButton: {fileID: 1737142858}
 --- !u!114 &1720488008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,7 +2581,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
@@ -2750,7 +2714,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1

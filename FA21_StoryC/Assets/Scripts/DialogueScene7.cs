@@ -96,7 +96,7 @@ public class DialogueScene7 : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "Turning around you see a dark room. at the end a bright exit sign can be seen.";
+            Char6Narration.text = "Turning around you see a dark room. At the end a bright exit sign can be seen.";
         }
         else if (primeInt == 3)
         {
@@ -592,7 +592,7 @@ public class DialogueScene7 : MonoBehaviour
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "Yeah...I heard in mazes if you keep your hand on the right wall you'll get out.";
+            Char4GregorySpeech.text = "Are you serious?!";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
@@ -602,7 +602,6 @@ public class DialogueScene7 : MonoBehaviour
 
         else if (primeInt == 201)
         {
-            Image_Gregory.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             //Char2Chad.text = "";
@@ -671,7 +670,7 @@ public class DialogueScene7 : MonoBehaviour
         {
             Image_GregoryScared.SetActive(false);
             Char1You.text = "You";
-            Char1YouSpeech.text = "Pull your shit together, Greg. What's the worst that can happen?";
+            Char1YouSpeech.text = "Pull yourself together, Greg. What's the worst that can happen?";
             //Char2Chad.text = "";
             //Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
@@ -776,7 +775,7 @@ public class DialogueScene7 : MonoBehaviour
         }
         else if (primeInt == 251)
         {
-            Char1You.text = "You";
+            Char1You.text = "";
             Char1YouSpeech.text = "";
             //Char2Chad.text = "";
             //Char2ChadSpeech.text = "";

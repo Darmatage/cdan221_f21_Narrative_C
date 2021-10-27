@@ -250,7 +250,7 @@ public class DialogueScene6 : MonoBehaviour
         {
             Image_Gregory.SetActive(false);
             Char1You.text = "You";
-            Char1YouSpeech.text = "I don't know...maybe it's just a really good haunted house?";
+            Char1YouSpeech.text = "I don't know...seems like it's just a really good haunted house?";
             Char2Chad.text = "";
             Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
@@ -467,7 +467,6 @@ public class DialogueScene6 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 104)
         {
             Image_Gregory.SetActive(false);
@@ -601,7 +600,7 @@ public class DialogueScene6 : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
-            Char6Narration.text = "You will never get out of this place alive...";
+            Char6Narration.text = "YHa! And you thought you could escape...You'll never leave this place";
             Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);
@@ -644,7 +643,7 @@ public class DialogueScene6 : MonoBehaviour
         }
         else if (primeInt == 202)
         {
-            Image_PJ.SetActive(true);
+            Image_PJ.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";

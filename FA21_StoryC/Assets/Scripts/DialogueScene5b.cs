@@ -318,7 +318,6 @@ public class DialogueScene5b : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 104)
         {
             Image_PJ.SetActive(false);
@@ -450,7 +449,7 @@ public class DialogueScene5b : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
-            Char6Narration.text = "You're never gonna get out of this place...";
+            Char6Narration.text = "You're never gonna get out of this place alive...";
             Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);

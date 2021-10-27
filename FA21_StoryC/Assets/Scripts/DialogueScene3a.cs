@@ -609,6 +609,7 @@ public class DialogueScene3a : MonoBehaviour
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
+
     }
     public void Choice1bFunct()
     {
@@ -629,6 +630,7 @@ public class DialogueScene3a : MonoBehaviour
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
+
     }
 
     public void SceneChange1()
