@@ -71,6 +71,96 @@ public class DialogueScene1 : MonoBehaviour
         else if (primeInt == 2)
         {
             Dialogue.SetActive(true);
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "The start of the semester has been an absolute whirlwind.";
+        }
+        else if (primeInt == 3)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "You're entering your junior year at Sunnyvale Community College";
+        }
+        else if (primeInt == 4)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "In spite of flying under the social radar for years you found yourself a group of friends.";
+        }
+        else if (primeInt == 5)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = ""; 
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "A group formed from a statistics study group, you are all very different.";
+        }
+        else if (primeInt == 6)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "Despite this you all became close, and decided to come to a travelling haunted house.";
+        }
+        else if (primeInt == 7)
+        {
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
+            Char2Chad.text = "";
+            Char2ChadSpeech.text = "";
+            Char3Gwen.text = "";
+            Char3GwenSpeech.text = "";
+            Char4Gregory.text = "";
+            Char4GregorySpeech.text = "";
+            Char5PJ.text = "";
+            Char5PJSpeech.text = "";
+            Char6Narrator.text = "Narrator";
+            Char6Narration.text = "Finding a travelling one has set up in Sunnyvale, you all decided to check it out.";
+        }
+        else if (primeInt == 8)
+        {
             Char1You.text = "You";
             Char1YouSpeech.text = "Jeez, look at the size of this place. I wonder how big the inside is.";
             Char2Chad.text = "";
@@ -84,13 +174,13 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 3)
+        else if (primeInt == 9)
         {
             Image_Chad.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "Guys, I'm literally so excited. This is going to be so kickass.";
+            Char2ChadSpeech.text = "Guys, I'm literally so excited. This is going to be so sick.";
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
@@ -100,7 +190,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 4)
+        else if (primeInt == 10)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -116,7 +206,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narration.text = "";
             //gameHandler.AddPlayerStat(1);
         }
-        else if (primeInt == 5)
+        else if (primeInt == 11)
         {
             Image_Chad.SetActive(false);
             Image_Gwen.SetActive(true);
@@ -133,7 +223,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 6)
+        else if (primeInt == 12)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -149,7 +239,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narration.text = "";
             //gameHandler.AddPlayerStat(1);
         }
-        else if (primeInt == 7)
+        else if (primeInt == 13)
         {
             Image_Gwen.SetActive(false);
             Image_Gregory.SetActive(true);
@@ -166,7 +256,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 8)
+        else if (primeInt == 14)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -181,7 +271,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 9)
+        else if (primeInt == 15)
         {
             Image_Gregory.SetActive(false);
             Image_PJ.SetActive(true);
@@ -204,7 +294,7 @@ public class DialogueScene1 : MonoBehaviour
             //Choice1b.SetActive(true); // function Choice1bFunct()
         }
         // ENCOUNTER AFTER CHOICE #1
-        else if (primeInt == 10)
+        else if (primeInt == 16)
         {
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -219,7 +309,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 11)
+        else if (primeInt == 17)
         {
             Image_PJ.SetActive(false);
             Image_Chad.SetActive(true);
@@ -240,7 +330,7 @@ public class DialogueScene1 : MonoBehaviour
             //Button_SceneChange1.SetActive(true);
         }
 
-        else if (primeInt == 12)
+        else if (primeInt == 18)
         {
             Image_Chad.SetActive(false);
             Image_Gregory.SetActive(true);
@@ -257,7 +347,7 @@ public class DialogueScene1 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 13)
+        else if (primeInt == 19)
         {
             Image_Gregory.SetActive(false);
             Image_PJ.SetActive(true);
@@ -412,7 +502,6 @@ public class DialogueScene1 : MonoBehaviour
         else if (primeInt == 107)
         {
             Image_PJ.SetActive(false);
-            Image_Gwen.SetActive(false);
             Char1You.text = "You";
             Char1YouSpeech.text = "*Jeez maybe we should just go inside before this takes a genuinely scary turn...";
             Char2Chad.text = "";
@@ -425,11 +514,9 @@ public class DialogueScene1 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-
         }
         else if (primeInt == 108)
         {
-
             Char1You.text = "You";
             Char1YouSpeech.text = "Alright, are we ready to head in, guys?";
             Char2Chad.text = "";
@@ -442,11 +529,9 @@ public class DialogueScene1 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-
         }
         else if (primeInt == 109)
         {
-
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -504,8 +589,6 @@ public class DialogueScene1 : MonoBehaviour
         }
         else if (primeInt == 201)
         {
-            Image_PJ.SetActive(false);
-            Image_Gregory.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -513,7 +596,7 @@ public class DialogueScene1 : MonoBehaviour
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "You both are definitely lying just to scare us!";
+            Char4GregorySpeech.text = "With all the saftey protocols there is no WAY that could happen!";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
@@ -547,7 +630,7 @@ public class DialogueScene1 : MonoBehaviour
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "Yeah guys, let's get this over with...I have a test I need to study for tonight...";
+            Char4GregorySpeech.text = "Let's just get this over with...I have a test I need to study for tonight...";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";

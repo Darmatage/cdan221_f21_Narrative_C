@@ -287,7 +287,6 @@ public class DialogueScene2 : MonoBehaviour
             nextButton.SetActive(false);
 
         }
-        // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 104)
         {
             Image_PJ.SetActive(true);
@@ -876,12 +875,12 @@ public class DialogueScene2 : MonoBehaviour
             Image_Gregory.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
-            Char2Chad.text = "Sure!";
+            Char2Chad.text = "";
             Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
             Char3GwenSpeech.text = "";
-            Char4Gregory.text = "";
-            Char4GregorySpeech.text = "";
+            Char4Gregory.text = "Gregory";
+            Char4GregorySpeech.text = "Sure! At least I'll be spooked in a cool room...";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
