@@ -568,7 +568,7 @@ public class DialogueScene3a : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 201)
+        else if (primeInt == 202)
         {
             Image_Chad.SetActive(false);
             Char1You.text = "";

@@ -190,7 +190,7 @@ public class DialogueScene5a : MonoBehaviour
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
-            Char2ChadSpeech.text = "?";
+            Char2ChadSpeech.text = "";
             //Char3Gwen.text = "";
             //Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
@@ -199,11 +199,6 @@ public class DialogueScene5a : MonoBehaviour
             Char5PJSpeech.text = "Dude, we're in a haunted house...It's probably the only place where I can be myself...";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-            // Turn off "Next" button, turn on "Choice" buttons
-            //nextButton.SetActive(false);
-            // allowSpace = false;
-            //Choice1a.SetActive(true); // function Choice1aFunct()
-            //Choice1b.SetActive(true); // function Choice1bFunct()
         }
         else if (primeInt == 10)
         {
@@ -342,8 +337,8 @@ public class DialogueScene5a : MonoBehaviour
             //Char4GregorySpeech.text = "";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
-            Char6Narrator.text = "Narrator";
-            Char6Narration.text = "Nurse 1: Hello, Dearies! Don't mind me, she's a bit sick in the head...We'll haave her fixed up in no time.";
+            Char6Narrator.text = "Nurse 1";
+            Char6Narration.text = "Hello, Dearies! Don't mind me, she's a bit sick in the head...We'll haave her fixed up in no time.";
 
         }
         else if (primeInt == 18)
@@ -409,8 +404,8 @@ public class DialogueScene5a : MonoBehaviour
             //Char4GregorySpeech.text = "";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "Nurse 2: While my colleagues takes care of her let me get you guys checked in...";
+            Char6Narrator.text = "Nurse 2";
+            Char6Narration.text = "While my colleagues takes care of her let me get you guys checked in...";
 
         }
         else if (primeInt == 22)
@@ -510,7 +505,7 @@ public class DialogueScene5a : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "You watch as the nurse presses the electrodes to her head and thw woman starts convulsing violently.";
+            Char6Narration.text = "You watch as the nurse presses the electrodes to her head and the woman starts convulsing.";
 
         }
         else if (primeInt == 104)
@@ -702,7 +697,7 @@ public class DialogueScene5a : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "Your head hits the floor hard, and as you're swimming in and out of consciousness, you feel yourself being dragged back into the depths of the house.";
+            Char6Narration.text = "Your head hits the floor. You go in and out of consciousness, and are dragged back into the depths of the house.";
         }
         else if (primeInt == 116)
         {
@@ -859,8 +854,8 @@ public class DialogueScene5a : MonoBehaviour
             Image_Chad.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
-            Char2Chad.text = "Why did they even bother with the exit sign?";
-            Char2ChadSpeech.text = "";
+            Char2Chad.text = "Chad";
+            Char2ChadSpeech.text = "Why did they even bother with the exit sign?";
             //Char3Gwen.text = "";
             //Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
@@ -960,8 +955,8 @@ public class DialogueScene5a : MonoBehaviour
             //Char4GregorySpeech.text = "";
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "Nurse 2: Who said we're actors?";
+            Char6Narrator.text = "Nurse 1";
+            Char6Narration.text = "Who said we're actors?";
         }
         else if (primeInt == 213)
         {
@@ -1019,7 +1014,7 @@ public class DialogueScene5a : MonoBehaviour
     public void Choice1aFunct()
     {
         Char1You.text = "You";
-        Char1YouSpeech.text = "Guys, maybe we should get out of here...I don't like this at all.";
+        Char1YouSpeech.text = "This is getting a little too real...";
         Char2Chad.text = "";
         Char2ChadSpeech.text = "";
         //Char3Gwen.text = "";

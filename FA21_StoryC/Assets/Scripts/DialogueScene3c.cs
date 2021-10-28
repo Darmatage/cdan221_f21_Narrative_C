@@ -269,7 +269,7 @@ public class DialogueScene3c : MonoBehaviour
             Char6Narration.text = "";
         }
 
-        else if (primeInt == 15)
+        else if (primeInt == 14)
         {
             Image_GwenScared.SetActive(true);
             Char1You.text = "";
@@ -598,6 +598,9 @@ public class DialogueScene3c : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(1);
+
     }
     public void Choice1bFunct()
     {
@@ -619,6 +622,9 @@ public class DialogueScene3c : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(-1);
+
     }
 
     public void SceneChange1()

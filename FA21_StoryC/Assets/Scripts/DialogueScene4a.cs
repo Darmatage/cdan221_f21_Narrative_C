@@ -230,7 +230,7 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "The noise starts to seemingly draw closer to your group, and you scan the shadowed corners of the room, trying to find the source of the noise. ";
+            Char6Narration.text = "A noise draws closer to your group, you scan the room and to find the source. ";
             Button_Next.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); 
@@ -275,7 +275,7 @@ public class DialogueScene4a : MonoBehaviour
         }
         else if (primeInt == 102)
         {
-            Image_Chad.SetActive(false);
+            Image_PJ.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -325,7 +325,6 @@ public class DialogueScene4a : MonoBehaviour
         }
         else if (primeInt == 105)
         {
-            Image_PJ.SetActive(false);
             Image_Chad.SetActive(true);
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -392,7 +391,6 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJSpeech.text = "Ew, what happened to his arms??";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-
         }
         else if (primeInt == 109)
         {
@@ -415,8 +413,6 @@ public class DialogueScene4a : MonoBehaviour
         }
         else if (primeInt == 110)
         {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -432,8 +428,6 @@ public class DialogueScene4a : MonoBehaviour
         }
         else if (primeInt == 111)
         {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -450,7 +444,6 @@ public class DialogueScene4a : MonoBehaviour
         else if (primeInt == 112)
         {
             Image_PJ.SetActive(true);
-            Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -515,8 +508,6 @@ public class DialogueScene4a : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-            //Button_SceneChange1.SetActive(true);
-
         }
         else if (primeInt == 115)
         {

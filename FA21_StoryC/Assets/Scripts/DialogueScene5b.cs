@@ -251,6 +251,7 @@ public class DialogueScene5b : MonoBehaviour
 
         else if (primeInt == 100)
         {
+            Image_Gregory.SetActive(false);
             Char1You.text = "You";
             Char1YouSpeech.text = "You all can keep going, but I think I'll bring our buddy Greg outside.";
             Char2Chad.text = "";

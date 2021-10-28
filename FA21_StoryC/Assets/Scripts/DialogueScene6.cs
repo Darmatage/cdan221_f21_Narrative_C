@@ -497,8 +497,8 @@ public class DialogueScene6 : MonoBehaviour
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
-            Char5PJ.text = "Guys wait-";
-            Char5PJSpeech.text = "";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "Guys wait-";
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
@@ -600,7 +600,7 @@ public class DialogueScene6 : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
-            Char6Narration.text = "YHa! And you thought you could escape...You'll never leave this place";
+            Char6Narration.text = "HAHAHA! And you thought you could escape...You'll never leave this place!";
             Button_Next.SetActive(false);
             allowSpace = false;
             Button_SceneChange1.SetActive(true);

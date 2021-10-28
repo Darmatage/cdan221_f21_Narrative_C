@@ -248,8 +248,8 @@ public class DialogueScene7 : MonoBehaviour
         {
             Image_GwenScared.SetActive(false);
             Image_GregoryScared.SetActive(true);
-            Char1You.text = "You";
-            Char1YouSpeech.text = "I don't know...maybe it's just a really good haunted house?";
+            Char1You.text = "";
+            Char1YouSpeech.text = "";
             //Char2Chad.text = "";
             //Char2ChadSpeech.text = "";
             Char3Gwen.text = "";
@@ -490,11 +490,11 @@ public class DialogueScene7 : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
 
-            if (gameHandler.CheckPlayerStat() <= 0)
+            if (gameHandler.CheckPlayerStat() <= 2)
             {
                 primeInt = 149;
             }
-            else if (gameHandler.CheckPlayerStat() > 0)
+            else if (gameHandler.CheckPlayerStat() > 3)
             {
                 primeInt = 249;
             }
@@ -718,7 +718,7 @@ public class DialogueScene7 : MonoBehaviour
             Image_GregoryScared.SetActive(false);
             Image_Gwen.SetActive(true);
             Char1You.text = "";
-            Char1YouSpeech.text = "Let's go!";
+            Char1YouSpeech.text = "";
             //Char2Chad.text = "";
             //Char2ChadSpeech.text = "";
             Char3Gwen.text = "Gwen";
@@ -746,11 +746,11 @@ public class DialogueScene7 : MonoBehaviour
             Char6Narrator.text = "Narrator";
             Char6Narration.text = "The door draws closer and closer, and you switch into a full sprint.";
 
-            if (gameHandler.CheckPlayerStat() <= 0)
+            if (gameHandler.CheckPlayerStat() <= 2)
             {
                 primeInt = 149;
             }
-            else if (gameHandler.CheckPlayerStat() > 0)
+            else if (gameHandler.CheckPlayerStat() > 3)
             {
                 primeInt = 249;
             }

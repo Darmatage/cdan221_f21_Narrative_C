@@ -284,7 +284,6 @@ public class DialogueScene2 : MonoBehaviour
             Char5PJSpeech.text = "";
             Char6Narrator.text = "";
             Char6Narration.text = "";
-            nextButton.SetActive(false);
 
         }
         else if (primeInt == 104)
@@ -518,7 +517,7 @@ public class DialogueScene2 : MonoBehaviour
         }
         else if (primeInt == 206)
         {
-            Image_PJ.SetActive(false);
+            Image_PJ.SetActive(true);
             Image_Chad.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
@@ -536,7 +535,7 @@ public class DialogueScene2 : MonoBehaviour
         else if (primeInt == 207)
         {
             Image_Gregory.SetActive(true);
-            Image_PJ.SetActive(true);
+            Image_PJ.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "";
@@ -942,7 +941,7 @@ public class DialogueScene2 : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
     public void Choice1aFunct()
     {
-        Char1You.text = "";
+        Char1You.text = "You";
         Char1YouSpeech.text = "The bloody door.";
         Char2Chad.text = "";
         Char2ChadSpeech.text = "";
@@ -956,13 +955,14 @@ public class DialogueScene2 : MonoBehaviour
         Char6Narration.text = "";
         primeInt = 99;
         Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
+        Choice1b.SetActive(false); 
+        Choice1c.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
     public void Choice1bFunct()
     {
-        Char1You.text = "";
+        Char1You.text = "You";
         Char1YouSpeech.text = "The slimy door.";
         Char2Chad.text = "";
         Char2ChadSpeech.text = "";
@@ -977,12 +977,13 @@ public class DialogueScene2 : MonoBehaviour
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
     public void Choice1cFunct()
     {
-        Char1You.text = "";
+        Char1You.text = "You";
         Char1YouSpeech.text = "The scratched door.";
         Char2Chad.text = "";
         Char2ChadSpeech.text = "";
@@ -997,6 +998,7 @@ public class DialogueScene2 : MonoBehaviour
         primeInt = 299;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
