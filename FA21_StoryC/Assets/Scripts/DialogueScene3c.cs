@@ -192,9 +192,9 @@ public class DialogueScene3c : MonoBehaviour
             Char3GwenSpeech.text = "";
             //Char4Gregory.text = "";
             //Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "PJ";
-            Char6Narrator.text = "Nice, isn't it?";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "Nice, isn't it?";
+            Char6Narrator.text = "";
             Char6Narration.text = "";
             // Turn off "Next" button, turn on "Choice" buttons
             //nextButton.SetActive(false);
@@ -395,8 +395,8 @@ public class DialogueScene3c : MonoBehaviour
             Char1YouSpeech.text = "";
             //Char2Chad.text = "";
             //Char2ChadSpeech.text = "";
-            Char3Gwen.text = "HEY LET GO LADY! C'MON LET'S GO!!";
-            Char3GwenSpeech.text = "";
+            Char3Gwen.text = "Gwen";
+            Char3GwenSpeech.text = "HEY LET GO LADY! C'MON LET'S GO!!";
             //Char4Gregory.text = "";
             //Char4GregorySpeech.text = "";
             Char5PJ.text = "";
