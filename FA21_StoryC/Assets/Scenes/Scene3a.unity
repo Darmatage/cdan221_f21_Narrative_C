@@ -674,8 +674,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488008}
+        m_TargetAssemblyTypeName: DialogueScene3a, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -1595,8 +1595,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488008}
+        m_TargetAssemblyTypeName: DialogueScene3a, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -1908,11 +1908,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2735850534337931810, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2735850534337931810, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4666000286788662807, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2026,17 +2026,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 4666000288260236894, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6130827017186274974, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6130827017186274974, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6130827017186274974, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
@@ -2581,8 +2585,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488008}
+        m_TargetAssemblyTypeName: DialogueScene3a, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -2714,8 +2718,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488008}
+        m_TargetAssemblyTypeName: DialogueScene3a, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:

@@ -31,7 +31,7 @@ public class DialogueScene4a : MonoBehaviour
     public GameObject Button_SceneChange1;
     //public GameObject Button_SceneChange2;
     public GameObject Button_Next;
-    //public GameHandler gameHandler;
+    public GameHandler gameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -696,6 +696,10 @@ public class DialogueScene4a : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(1);
+
+
     }
     public void Choice1bFunct()
     {
@@ -711,12 +715,16 @@ public class DialogueScene4a : MonoBehaviour
         Char5PJ.text = "";
         Char5PJSpeech.text = "";
         Char6Narrator.text = "Narrator";
-        Char6Narration.text = "The chains rattle violently, getting louder ad louder with every second.";
+        Char6Narration.text = "The chains rattle violently, getting louder and louder with every second.";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(-1);
+
+
     }
 
 
