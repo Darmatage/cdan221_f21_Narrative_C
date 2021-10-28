@@ -218,6 +218,7 @@ public class DialogueScene3b : MonoBehaviour
         else if (primeInt == 11)
         {
             Image_Chad.SetActive(true);
+            Image_Gregory.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "Chad";
@@ -530,6 +531,9 @@ public class DialogueScene3b : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(1);
+
     }
     public void Choice1bFunct()
     {
@@ -550,6 +554,9 @@ public class DialogueScene3b : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(-1);
+
     }
 
     public void SceneChange1()

@@ -267,9 +267,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
-        m_MethodName: SceneChange1
+      - m_Target: {fileID: 1720488007}
+        m_TargetAssemblyTypeName: DialogueScene6, Assembly-CSharp
+        m_MethodName: SceneChange2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -865,7 +865,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I mean..
+  m_Text: Go Left
 --- !u!222 &558992702
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -957,8 +957,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488007}
+        m_TargetAssemblyTypeName: DialogueScene6, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100% It's real
+  m_Text: Go Right
 --- !u!222 &621888835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1878,8 +1878,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488007}
+        m_TargetAssemblyTypeName: DialogueScene6, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -2141,6 +2141,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 0b21888a6af6ec84f88c51ea14aa5db6, type: 2}
+    - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 2082459796}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
 --- !u!114 &1254388765 stripped
@@ -2855,8 +2863,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488007}
+        m_TargetAssemblyTypeName: DialogueScene6, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -2988,8 +2996,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
+      - m_Target: {fileID: 1720488007}
+        m_TargetAssemblyTypeName: DialogueScene6, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
@@ -3599,5 +3607,10 @@ PrefabInstance:
 --- !u!224 &2082459795 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4666000288260236893, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
+  m_PrefabInstance: {fileID: 2082459794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2082459796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4666000288260236894, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
   m_PrefabInstance: {fileID: 2082459794}
   m_PrefabAsset: {fileID: 0}

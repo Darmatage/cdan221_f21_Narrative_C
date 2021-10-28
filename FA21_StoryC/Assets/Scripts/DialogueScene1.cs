@@ -359,9 +359,9 @@ public class DialogueScene1 : MonoBehaviour
             Char3GwenSpeech.text = "";
             Char4Gregory.text = "";
             Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "PJ";
-            Char6Narrator.text = "What do you think, it's definitely real, right?";
+            Char5PJ.text = "PJ";
+            Char5PJSpeech.text = "What do you think, it's definitely real, right?";
+            Char6Narrator.text = "";
             Char6Narration.text = "";
             nextButton.SetActive(false);
             allowSpace = false;

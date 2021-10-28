@@ -251,6 +251,7 @@ public class DialogueScene5b : MonoBehaviour
 
         else if (primeInt == 100)
         {
+            Image_Gregory.SetActive(false);
             Char1You.text = "You";
             Char1YouSpeech.text = "You all can keep going, but I think I'll bring our buddy Greg outside.";
             Char2Chad.text = "";
@@ -475,6 +476,7 @@ public class DialogueScene5b : MonoBehaviour
         else if (primeInt == 201)
         {
             Image_Chad.SetActive(true);
+            Image_Gregory.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "Chad";
@@ -642,6 +644,10 @@ public class DialogueScene5b : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(1);
+
+
     }
     public void Choice1bFunct()
     {
@@ -662,6 +668,10 @@ public class DialogueScene5b : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(-1);
+
+
     }
 
     public void SceneChange1()

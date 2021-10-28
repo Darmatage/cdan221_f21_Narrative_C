@@ -568,7 +568,7 @@ public class DialogueScene3a : MonoBehaviour
             Char6Narrator.text = "";
             Char6Narration.text = "";
         }
-        else if (primeInt == 201)
+        else if (primeInt == 202)
         {
             Image_Chad.SetActive(false);
             Char1You.text = "";
@@ -610,6 +610,8 @@ public class DialogueScene3a : MonoBehaviour
         nextButton.SetActive(true);
         allowSpace = true;
 
+        gameHandler.AddPlayerStat(1);
+
     }
     public void Choice1bFunct()
     {
@@ -630,6 +632,8 @@ public class DialogueScene3a : MonoBehaviour
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(-1);
 
     }
 
