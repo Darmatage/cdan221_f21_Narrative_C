@@ -475,6 +475,7 @@ public class DialogueScene5b : MonoBehaviour
         else if (primeInt == 201)
         {
             Image_Chad.SetActive(true);
+            Image_Gregory.SetActive(false);
             Char1You.text = "";
             Char1YouSpeech.text = "";
             Char2Chad.text = "Chad";
