@@ -138,7 +138,7 @@ public class DialogueScene4b : MonoBehaviour
             Char5PJ.text = "";
             Char5PJSpeech.text = "";
             Char6Narrator.text = "Narrator";
-            Char6Narration.text = "along either wall, looming menacingly over the path through the center of the room.";
+            Char6Narration.text = "Mannequins bedecked in neon paint and garbs are lined up along either wall, looming menacingly over the path through the center of the room.";
         }
         else if (primeInt == 6)
         {
@@ -289,65 +289,6 @@ public class DialogueScene4b : MonoBehaviour
         }
  
         else if (primeInt == 14)
-        {
-            Image_PJ.SetActive(false);
-            Image_Chad.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = " This is so weird… It reminds me of the time I dropped acid at Homecoming my senior year… ";
-            Char3Gwen.text = "";
-            Char3GwenSpeech.text = "";
-            Char4Gregory.text = "";
-            Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-		
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-        }
-
-        else if (primeInt == 15)
-        {
-            
-            Image_Chad.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "Chad";
-            Char2ChadSpeech.text = "Such a trippy time, Dude. It really changes a man…";
-            Char3Gwen.text = "";
-            Char3GwenSpeech.text = "";
-            Char4Gregory.text = "";
-            Char4GregorySpeech.text = "";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-        }
-
-        else if (primeInt == 16)
-        {
-            Image_Chad.SetActive(false);
-            Image_GregoryScared.SetActive(true);
-            Char1You.text = "";
-            Char1YouSpeech.text = "";
-            Char2Chad.text = "";
-            Char2ChadSpeech.text = "";
-            Char3Gwen.text = "";
-            Char3GwenSpeech.text = "";
-            Char4Gregory.text = "Gregory";
-            Char4GregorySpeech.text = "Guys, is it just me or do some of the mannequins seem to almost be alive?";
-            Char5PJ.text = "";
-            Char5PJSpeech.text = "";
-            Char6Narrator.text = "";
-            Char6Narration.text = "";
-
-            //nextButton.SetActive(false);
-            //allowSpace = false;
-            //Button_SceneChange1.SetActive(true);
-            //Button_SceneChange2.SetActive(true);
-        }
-        else if (primeInt == 17)
         {
             Image_Gregory.SetActive(false);
             Char1You.text = "";
