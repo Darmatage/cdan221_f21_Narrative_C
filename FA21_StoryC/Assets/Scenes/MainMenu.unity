@@ -413,6 +413,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 0b21888a6af6ec84f88c51ea14aa5db6, type: 2}
+    - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 80852280}

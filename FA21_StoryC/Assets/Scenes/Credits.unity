@@ -481,6 +481,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 0b21888a6af6ec84f88c51ea14aa5db6, type: 2}
+    - target: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 1331149351}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
 --- !u!114 &1178387916 stripped
@@ -737,6 +745,11 @@ PrefabInstance:
 --- !u!224 &1331149350 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4666000288260236893, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
+  m_PrefabInstance: {fileID: 1331149349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1331149351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4666000288260236894, guid: dcc3bcd88eee0954d8eabb8665aaddaa, type: 3}
   m_PrefabInstance: {fileID: 1331149349}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1370645605
