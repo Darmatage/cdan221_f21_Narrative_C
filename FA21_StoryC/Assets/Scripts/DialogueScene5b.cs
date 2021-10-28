@@ -643,6 +643,10 @@ public class DialogueScene5b : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(1);
+
+
     }
     public void Choice1bFunct()
     {
@@ -663,6 +667,10 @@ public class DialogueScene5b : MonoBehaviour
         Choice1b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
+
+        gameHandler.AddPlayerStat(-1);
+
+
     }
 
     public void SceneChange1()

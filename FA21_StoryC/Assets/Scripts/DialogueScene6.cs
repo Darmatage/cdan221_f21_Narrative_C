@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class DialogueScene6 : MonoBehaviour
-{  
+{
     public int primeInt = 1; // This integer drives game progress!
     public Text Char1You;
     public Text Char1YouSpeech;
@@ -853,6 +853,9 @@ public class DialogueScene6 : MonoBehaviour
             Choice1b.SetActive(false);
             Button_Next.SetActive(true);
             allowSpace = true;
+
+            gameHandler.AddPlayerStat(-1);
+
         }
         public void Choice1bFunct()
         {
@@ -874,6 +877,10 @@ public class DialogueScene6 : MonoBehaviour
             Choice1b.SetActive(false);
             Button_Next.SetActive(true);
             allowSpace = true;
+
+            gameHandler.AddPlayerStat(1);
+
+
         }
 
         public void SceneChange1()
@@ -885,5 +892,5 @@ public class DialogueScene6 : MonoBehaviour
         {
             SceneManager.LoadScene("Scene7");
         }
-    
+
 }
