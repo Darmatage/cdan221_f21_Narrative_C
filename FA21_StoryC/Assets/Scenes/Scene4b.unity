@@ -674,7 +674,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
@@ -1595,7 +1595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
@@ -1860,6 +1860,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+--- !u!114 &1254388765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2989288470882811934, guid: 9cad845befdddae43a1c23e4f58b944a, type: 3}
+  m_PrefabInstance: {fileID: 1254388764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad848c997ae5134b8026871f057ebc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1360245305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,7 +2297,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1720488002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead598619d0e8354e88f41c370064731, type: 3}
+  m_Script: {fileID: 11500000, guid: 132c0acc5aec4dd40ae7b724d39b7759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -2306,12 +2317,14 @@ MonoBehaviour:
   Image_Chad: {fileID: 1925438913}
   Image_Gwen: {fileID: 1142800394}
   Image_Gregory: {fileID: 1066723944}
+  Image_GregoryScared: {fileID: 1066723944}
   Image_PJ: {fileID: 382057411}
   Image_BG: {fileID: 134030352}
   Choice1a: {fileID: 1159060510}
   Choice1b: {fileID: 588272640}
   Button_SceneChange1: {fileID: 1739276230}
-  nextButton: {fileID: 1737142858}
+  Button_Next: {fileID: 1737142858}
+  gameHandler: {fileID: 1254388765}
 --- !u!1 &1737142858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,7 +2408,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
@@ -2528,7 +2541,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1720488007}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueScene1, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
